@@ -57,6 +57,9 @@ def login():
 def register():
     return userController.register()
 
+@app.route("/resetpassword", methods=['GET','POST'])
+def resetpassword():
+    return userController.resetpassword()
 
 @app.route('/logout')
 def logout():

@@ -60,6 +60,11 @@ class UserController:
         return render_template("register.html", errors=errors)
 
     @staticmethod
+    def resetpassword():
+        errors = []
+        return render_template("resetpassword.html", errors=errors)
+
+    @staticmethod
     def logout():
         session.pop('logged_in', None)
         session.pop('email', None)
