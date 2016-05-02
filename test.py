@@ -53,6 +53,7 @@ class BlueGardenTestCase(BaseTestCase):
         print(type(response))
         self.assertIn(b'Email Id/Password do not match', response.data)
 
+
     # Testing Logout
     def test_logout(self):
         print('\n## Testing logout ##')
