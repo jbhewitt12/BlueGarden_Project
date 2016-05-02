@@ -14,8 +14,8 @@ class DevelopmentConfig(BaseConfig):
     MAIL_PORT = 587
     MAIL_USE_TLS = True
     MAIL_USE_SSL = False
-    MAIL_USERNAME = 'jbhewitt12@gmail.com'
-    MAIL_PASSWORD = 'Phlebas01'
+    MAIL_USERNAME = 'test9430384@gmail.com'
+    MAIL_PASSWORD = 'thisiseight'
 
 
 class ProductionConfig(BaseConfig):

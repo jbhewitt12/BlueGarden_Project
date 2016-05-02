@@ -79,8 +79,8 @@ class UserController:
                     passwordReset = PasswordResets(user.id, ''.join(random.choice('0123456789qwertyuiopasdfghjklzxcvbnm') for i in range(16)), DT.datetime.now() + DT.timedelta(hours=2))
                     db.session.add(passwordReset)
                     db.session.commit()
-                    msg = Message("Password reset BlueGarden", sender='jbhewitt12@gmail.com',
-                                  recipients=['jbhewitt12@gmail.com'])
+                    msg = Message("Password reset BlueGarden", sender='test9430384@gmail.com',
+                                  recipients=[email])
                     msg.html = "<b>Click <a href = 'http://127.0.0.1:5000/resetpassword/%s/%s'>here</a> to reset your password</b>" % (passwordReset.password_reset_token,  passwordReset.user_id)
                     mail.send(msg)
                     return redirect(url_for('resetdone'))
